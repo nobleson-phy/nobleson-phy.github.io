@@ -29,15 +29,15 @@ Keywords: Gravitational Waves, Pulsar Timing Arrays, Millisecond Pulsars, Superm
 
 ## Recent News
 
-- **June 2025**: Presented work at [International Pulsar Array]
-- **March 2026**: Paper titled "[The Indian Pulsar Timing Array Data Release 2: II. Customised Single-Pulsar Noise Analysis and Noise Budget]" accepted at [JHEAP]
+- **June 2025**: Presented work at International Pulsar Array
+- **March 2026**: Paper titled "The Indian Pulsar Timing Array Data Release 2: II. Customised Single-Pulsar Noise Analysis and Noise Budget" under review at JHEAP
 
 ## Contact Information
 
 **Email**: [nobleson@kumamoto-u.ac.jp](mailto:nobleson@kumamoto-u.ac.jp)
 
-**Office**: [Kurokami]
+**Office**: Kurokami
 
-**Department**: [Department of Physics]
-[Kumamoto University]
-[Kumamoto City, Kumamoto, 860-0862]
+**Department**: Department of Physics
+Kumamoto University
+Kumamoto City, Kumamoto, 860-0862
