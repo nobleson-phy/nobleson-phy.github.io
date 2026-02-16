@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(brew list:*)",
+      "Bash(brew --prefix:*)",
+      "Bash(export PATH=\"/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin:$PATH\")",
+      "Bash(ruby --version:*)",
+      "Bash(gem install:*)",
+      "Bash(bundle install:*)",
+      "Bash(bundle exec jekyll serve:*)",
+      "Bash(/bin/cat /private/tmp/claude-501/-Users-kujovi-Desktop-KU-github-research-profile-profile/tasks/bc85fef.output)",
+      "Bash(/bin/cat /private/tmp/claude-501/-Users-kujovi-Desktop-KU-github-research-profile-profile/tasks/b2f926f.output)",
+      "Bash(python3:*)",
+      "Bash(pip3 list:*)",
+      "Bash(pip3 install:*)",
+      "Bash(bundle:*)",
+      "Bash(export PATH=\"/opt/homebrew/opt/ruby/bin:$PATH\")",
+      "WebSearch",
+      "Bash(curl:*)",
+      "Bash(sips:*)",
+      "Bash(gh auth status:*)",
+      "Bash(gh repo view:*)"
+    ]
+  }
+}

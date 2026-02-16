@@ -1,0 +1,78 @@
+# Site Settings
+title: "Nobleson"
+email: "nobleson@kumamoto-u.ac.jp"
+description: "My research profile and academic work"
+baseurl: "" # Leave empty if deploying to username.github.io
+url: "https://nobleson-phy.github.io" # Change this to your GitHub Pages URL
+github_username: nobleson-phy
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Theme Settings (using minimal theme)
+theme: minima
+minima:
+  skin: auto
+  social_links:
+    - { platform: github, user_url: "https://github.com/nobleson-phy" }
+    #- { platform: linkedin, user_url: "https://linkedin.com/in/yourusername" }
+    - { platform: orcid, user_url: "https://orcid.org/0000-0003-2715-4504" }
+    - { platform: google-scholar, user_url: "https://scholar.google.com/citations?user=De2QHMUAAAAJ&hl=en" }
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Jekyll-Scholar for bibliography (uncomment if needed)
+# jekyll-scholar:
+#   style: apa
+#   locale: en
+
+# Collections
+collections:
+  papers:
+    output: true
+  talks:
+    output: true
+    permalink: /talks/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+
+# Contact Information (for footer)
+department: "Department of Physics"
+institution: "Kumamoto University"
+#office: "Building 123, Room 456"
+
+# Social Media (for footer)
+#twitter_username: yourusername
+#linkedin_username: yourusername
+orcid_id: 0000-0003-2715-4504
+google_scholar_id: De2QHMUAAAAJ&hl
+researchgate: https://www.researchgate.net/profile/K-Nobleson
+
+# Footer navigation (optional)
+footer_nav:
+  - title: "Privacy Policy"
+    url: "/privacy/"
+  - title: "Accessibility"
+    url: "/accessibility/"

@@ -1,0 +1,179 @@
+{% comment %}
+  papers_list.html
+  Include template for displaying a list of papers
+  Usage: {% include papers_list.html papers=site.papers %}
+{% endcomment %}
+
+<div class="papers-container">
+  {% if include.papers.size > 0 %}
+    {% assign sorted_papers = include.papers | sort: "year" | reverse %}
+    
+    <div class="papers-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="journal">Journal Articles</button>
+      <button class="filter-btn" data-filter="conference">Conference Papers</button>
+      <button class="filter-btn" data-filter="preprint">Preprints</button>
+      <button class="filter-btn" data-filter="chapter">Book Chapters</button>
+    </div>
+    
+    <div class="papers-list">
+      {% for paper in sorted_papers %}
+        <div class="paper-item" data-type="{{ paper.type | default: 'other' }}">
+          <div class="paper-header">
+            <h3 class="paper-title">
+              {% if paper.url %}
+                <a href="{{ paper.url | relative_url }}">{{ paper.title }}</a>
+              {% else %}
+                {{ paper.title }}
+              {% endif %}
+            </h3>
+            
+            <div class="paper-badges">
+              {% if paper.type == 'journal' %}
+                <span class="badge badge-journal">Journal</span>
+              {% elsif paper.type == 'conference' %}
+                <span class="badge badge-conference">Conference</span>
+              {% elsif paper.type == 'preprint' %}
+                <span class="badge badge-preprint">Preprint</span>
+              {% elsif paper.type == 'chapter' %}
+                <span class="badge badge-chapter">Chapter</span>
+              {% endif %}
+              
+              {% if paper.year %}
+                <span class="badge badge-year">{{ paper.year }}</span>
+              {% endif %}
+              
+              {% if paper.status == 'accepted' %}
+                <span class="badge badge-accepted">Accepted</span>
+              {% elsif paper.status == 'forthcoming' %}
+                <span class="badge badge-forthcoming">Forthcoming</span>
+              {% elsif paper.status == 'in-preparation' %}
+                <span class="badge badge-preparation">In Preparation</span>
+              {% endif %}
+            </div>
+          </div>
+          
+          <div class="paper-authors">
+            {% if paper.authors %}
+              {{ paper.authors | join: ", " }}
+            {% elsif paper.author %}
+              {{ paper.author }}
+            {% endif %}
+          </div>
+          
+          <div class="paper-venue">
+            {% if paper.journal %}
+              <em>{{ paper.journal }}</em>
+              {% if paper.volume %}, {{ paper.volume }}{% endif %}
+              {% if paper.issue %}({{ paper.issue }}){% endif %}
+              {% if paper.pages %}: {{ paper.pages }}{% endif %}
+            {% elsif paper.booktitle %}
+              In <em>{{ paper.booktitle }}</em>
+              {% if paper.pages %}, pp. {{ paper.pages }}{% endif %}
+            {% elsif paper.publisher %}
+              {{ paper.publisher }}
+            {% endif %}
+          </div>
+          
+          <div class="paper-abstract">
+            {% if paper.abstract %}
+              <button class="abstract-toggle" data-target="abstract-{{ forloop.index }}">
+                Show Abstract <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="abstract-content" id="abstract-{{ forloop.index }}">
+                {{ paper.abstract | markdownify }}
+              </div>
+            {% endif %}
+          </div>
+          
+          <div class="paper-links">
+            {% if paper.doi %}
+              <a href="https://doi.org/{{ paper.doi }}" class="paper-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-link"></i> DOI
+              </a>
+            {% endif %}
+            
+            {% if paper.arxiv %}
+              <a href="https://arxiv.org/abs/{{ paper.arxiv }}" class="paper-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-archive"></i> arXiv
+              </a>
+            {% endif %}
+            
+            {% if paper.pdf %}
+              <a href="{{ paper.pdf | relative_url }}" class="paper-link" target="_blank">
+                <i class="fas fa-file-pdf"></i> PDF
+              </a>
+            {% elsif paper.pdf_url %}
+              <a href="{{ paper.pdf_url }}" class="paper-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-file-pdf"></i> PDF
+              </a>
+            {% endif %}
+            
+            {% if paper.slides %}
+              <a href="{{ paper.slides | relative_url }}" class="paper-link">
+                <i class="fas fa-presentation-screen"></i> Slides
+              </a>
+            {% elsif paper.slides_url %}
+              <a href="{{ paper.slides_url }}" class="paper-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-presentation-screen"></i> Slides
+              </a>
+            {% endif %}
+            
+            {% if paper.code %}
+              <a href="{{ paper.code }}" class="paper-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-code"></i> Code
+              </a>
+            {% endif %}
+            
+            {% if paper.data %}
+              <a href="{{ paper.data }}" class="paper-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-database"></i> Data
+              </a>
+            {% endif %}
+            
+            {% if paper.video %}
+              <a href="{{ paper.video }}" class="paper-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-video"></i> Video
+              </a>
+            {% endif %}
+            
+            {% if paper.bibtex %}
+              <button class="paper-link bibtex-toggle" data-target="bibtex-{{ forloop.index }}">
+                <i class="fas fa-quote-right"></i> BibTeX
+              </button>
+              <div class="bibtex-content" id="bibtex-{{ forloop.index }}">
+                <pre>{{ paper.bibtex }}</pre>
+              </div>
+            {% endif %}
+            
+            {% if paper.citation %}
+              <button class="paper-link citation-toggle" data-target="citation-{{ forloop.index }}">
+                <i class="fas fa-quote-left"></i> Citation
+              </button>
+              <div class="citation-content" id="citation-{{ forloop.index }}">
+                {{ paper.citation }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    
+    <div class="papers-stats">
+      <p>
+        Total publications: {{ include.papers.size }} 
+        ({% assign journal_count = include.papers | where: "type", "journal" | size %}
+        {{ journal_count }} journal articles, 
+        {% assign conference_count = include.papers | where: "type", "conference" | size %}
+        {{ conference_count }} conference papers, 
+        {% assign other_count = include.papers.size | minus: journal_count | minus: conference_count %}
+        {{ other_count }} other publications)
+      </p>
+    </div>
+    
+  {% else %}
+    <div class="no-papers">
+      <p>No papers to display yet. Check back soon!</p>
+    </div>
+  {% endif %}
+</div>

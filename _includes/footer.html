@@ -1,0 +1,95 @@
+<footer class="site-footer">
+  <div class="footer-stars"></div>
+  <div class="wrapper">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3 class="footer-heading">{{ site.title | escape }}</h3>
+        <p class="footer-description">
+          Research profile of {{ site.title }}. 
+          {% if site.description %}
+            {{ site.description }}
+          {% endif %}
+        </p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-heading">Contact</h3>
+        <ul class="contact-list">
+          {% if site.email %}
+            <li><i class="fas fa-envelope"></i> 
+              <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </li>
+          {% endif %}
+          {% if site.department %}
+            <li><i class="fas fa-university"></i> {{ site.department }}</li>
+          {% endif %}
+          {% if site.institution %}
+            <li><i class="fas fa-building"></i> {{ site.institution }}</li>
+          {% endif %}
+          {% if site.office %}
+            <li><i class="fas fa-map-marker-alt"></i> {{ site.office }}</li>
+          {% endif %}
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-heading">Connect</h3>
+        <div class="social-links">
+          {% if site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}" title="GitHub">
+              <i class="fab fa-github"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+          {% endif %}
+          
+          {% if site.linkedin_username %}
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          {% endif %}
+          
+          {% if site.twitter_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">
+              <i class="fab fa-twitter"></i>
+              <span class="sr-only">Twitter</span>
+            </a>
+          {% endif %}
+          
+          {% if site.orcid_id %}
+            <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID">
+              <i class="fab fa-orcid"></i>
+              <span class="sr-only">ORCID</span>
+            </a>
+          {% endif %}
+          
+          {% if site.google_scholar_id %}
+            <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}" title="Google Scholar">
+              <i class="fas fa-graduation-cap"></i>
+              <span class="sr-only">Google Scholar</span>
+            </a>
+          {% endif %}
+          
+          {% if site.researchgate %}
+            <a href="{{ site.researchgate }}" title="ResearchGate">
+              <i class="fab fa-researchgate"></i>
+              <span class="sr-only">ResearchGate</span>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}. 
+        All rights reserved.
+      </p>
+      <p class="powered-by">
+        Powered by <a href="https://jekyllrb.com/">Jekyll</a> and 
+        <a href="https://pages.github.com/">GitHub Pages</a>. 
+        Theme based on <a href="https://github.com/jekyll/minima">Minima</a>.
+      </p>
+    </div>
+  </div>
+</footer>
