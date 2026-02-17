@@ -30,7 +30,7 @@ Keywords: Gravitational Waves, Pulsar Timing Arrays, Millisecond Pulsars, Superm
 ## Recent News
 
 - **June 2025**: Presented work at International Pulsar Array
-- **March 2026**: Paper titled "The Indian Pulsar Timing Array Data Release 2: II. Customised Single-Pulsar Noise Analysis and Noise Budget" under review at JHEAP
+- **March 2026**: Paper titled "The Indian Pulsar Timing Array Data Release 2: II. Customised Single-Pulsar Noise Analysis and Noise Budget" accepted at JHEAP
 
 ## Contact Information
 

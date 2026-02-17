@@ -19,7 +19,12 @@
       "Bash(curl:*)",
       "Bash(sips:*)",
       "Bash(gh auth status:*)",
-      "Bash(gh repo view:*)"
+      "Bash(gh repo view:*)",
+      "Bash(git commit:*)",
+      "Bash(gh api:*)",
+      "Bash(git add:*)",
+      "Bash(git stash:*)",
+      "Bash(git push:*)"
     ]
   }
 }
