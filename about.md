@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Listening to the universe's most precise clocks"
+title: "Listening to the universe's most precise clocks tick"
 permalink: /about/
 ---
 
