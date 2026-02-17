@@ -696,7 +696,33 @@
 // ============================================
 // Navigation - updated for dark header
 // ============================================
+
+// Header layout: title left, nav right
+.site-header > .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .site-nav {
+  position: relative;
+
+  // Hide the checkbox
+  .nav-trigger {
+    display: none;
+  }
+
+  // Hamburger icon - hidden on desktop, shown on mobile
+  .menu-icon {
+    display: none;
+  }
+
+  // Nav links container
+  .trigger {
+    display: flex;
+    align-items: center;
+  }
+
   .page-link {
     margin-left: 20px;
     color: #94a3b8;
@@ -733,49 +759,66 @@
     .nav-text {
       display: inline-block;
     }
-
-    @media (max-width: 768px) {
-      i {
-        margin-right: 12px;
-        width: 20px;
-      }
-    }
   }
 
+  // Mobile styles
   @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      padding: 5px;
+
+      svg path {
+        fill: #94a3b8;
+      }
+    }
+
+    // Hide nav links by default on mobile
+    .trigger {
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      min-width: 220px;
+      background: linear-gradient(160deg, #0a0e1a 0%, #111827 100%);
+      border: 1px solid rgba(74, 158, 255, 0.15);
+      border-radius: 8px;
+      padding: 8px 0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      z-index: 1000;
+    }
+
+    // Show nav links when hamburger is checked
+    .nav-trigger:checked ~ .trigger {
+      display: flex;
+    }
+
     .page-link {
       margin-left: 0;
-      margin-right: 20px;
-      display: block;
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 12px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 
       &:last-child {
         border-bottom: none;
       }
 
-      &.active:after {
-        display: none;
+      &.active {
+        background: rgba(74, 158, 255, 0.1);
+
+        &:after {
+          display: none;
+        }
       }
-    }
-  }
-}
 
-// Mobile nav trigger (hamburger) - update for dark theme
-.site-header {
-  .nav-trigger {
-    display: none;
-  }
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+      }
 
-  .menu-icon {
-    display: none;
-
-    @media (max-width: 768px) {
-      display: block;
-      cursor: pointer;
-
-      svg path {
-        fill: #94a3b8;
+      i {
+        margin-right: 12px;
+        width: 20px;
       }
     }
   }
