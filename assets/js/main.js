@@ -2,12 +2,27 @@
 
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile menu toggle
-  const navTrigger = document.getElementById('nav-trigger');
   const menuIcon = document.querySelector('.menu-icon');
-  
-  if (navTrigger && menuIcon) {
-    menuIcon.addEventListener('click', function() {
-      navTrigger.checked = !navTrigger.checked;
+  const trigger = document.querySelector('.site-nav .trigger');
+
+  if (menuIcon && trigger) {
+    menuIcon.addEventListener('click', function(e) {
+      e.stopPropagation();
+      trigger.classList.toggle('open');
+    });
+
+    // Close menu when a link is tapped
+    trigger.querySelectorAll('.page-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        trigger.classList.remove('open');
+      });
+    });
+
+    // Close menu when tapping outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.site-nav')) {
+        trigger.classList.remove('open');
+      }
     });
   }
   
