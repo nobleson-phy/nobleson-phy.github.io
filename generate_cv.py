@@ -146,9 +146,9 @@ def build_cv():
 
     pdf.subsection('Postdoctoral Researcher', 'Nov 2023 -- Nov 2025')
     pdf.detail_italic('Kumamoto University, Kumamoto, Japan')
-    pdf.bullet('InPTA Data Release 2: dataset processing and timing analysis')
-    pdf.bullet('InPTA DR2 Noise Analysis: customised single-pulsar noise modelling')
-    pdf.bullet('IPTA Data Combination: contributing to the international data release')
+    pdf.bullet('InPTA Data Release 2: Dataset processing and timing analysis')
+    pdf.bullet('InPTA DR2 Noise Analysis: Customised single-pulsar noise modelling')
+    pdf.bullet('IPTA Data Combination: Contributing to the IPTA DR3')
 
     # ===== TEACHING =====
     pdf.section_heading('Teaching Experience')
@@ -175,7 +175,7 @@ def build_cv():
     pdf.section_heading('Selected Publications')
     pdf.set_font('Helvetica', 'I', 9)
     pdf.set_text_color(*MED_GRAY)
-    pdf.cell(0, 4.5, 'Full list: ORCID 0000-0003-2715-4504  |  20 peer-reviewed publications', new_x='LMARGIN', new_y='NEXT')
+    pdf.cell(0, 4.5, 'Full list: ORCID 0000-0003-2715-4504  |  21 peer-reviewed publications', new_x='LMARGIN', new_y='NEXT')
     pdf.ln(3)
 
     # First-author papers
@@ -184,19 +184,23 @@ def build_cv():
     pdf.cell(0, 5, 'First-Author Papers', new_x='LMARGIN', new_y='NEXT')
     pdf.ln(2)
 
-    pdf.pub_entry('[1]', 'K. Nobleson, S. Banik, T. Malik',
+    pdf.pub_entry('[1]', 'K. Nobleson, C. Dwivedi, S. Desai, et al.',
+        'The Indian Pulsar Timing Array data release 2: II. Customised single-pulsar noise analysis and noise budget',
+        'J. High Energy Astrophys. 53, 100594 (2026)')
+
+    pdf.pub_entry('[2]', 'K. Nobleson, S. Banik, T. Malik',
         'Unveiling a universal relationship between the f(R) parameter and neutron star properties',
         'Phys. Rev. D 107, 124045 (2023)')
 
-    pdf.pub_entry('[2]', 'K. Nobleson, N. Agarwal, R. Girgaonkar, et al.',
+    pdf.pub_entry('[3]', 'K. Nobleson, N. Agarwal, R. Girgaonkar, et al.',
         'Low-frequency wideband timing of InPTA pulsars observed with the uGMRT',
         'MNRAS 512(1), 1234-1243 (2022)')
 
-    pdf.pub_entry('[3]', 'K. Nobleson, T. Malik, S. Banik',
+    pdf.pub_entry('[4]', 'K. Nobleson, T. Malik, S. Banik',
         'Tidal deformability of neutron stars with exotic particles within a density dependent relativistic mean field model in R-squared gravity',
         'JCAP 2021(08), 012 (2021)')
 
-    pdf.pub_entry('[4]', 'K. Nobleson, A. Ali, S. Banik',
+    pdf.pub_entry('[5]', 'K. Nobleson, A. Ali, S. Banik',
         'Comparison of perturbative and non-perturbative methods in f(R) gravity',
         'Eur. Phys. J. C 82, 32 (2022)')
 
@@ -207,15 +211,15 @@ def build_cv():
     pdf.cell(0, 5, 'Co-Lead Papers', new_x='LMARGIN', new_y='NEXT')
     pdf.ln(2)
 
-    pdf.pub_entry('[5]', 'P. Rana, P. Tarafdar, K. Nobleson, et al.',
+    pdf.pub_entry('[6]', 'P. Rana, P. Tarafdar, K. Nobleson, et al.',
         'The Indian Pulsar Timing Array Data Release 2: I. Dataset and Timing Analysis',
         'PASA 42, e108 (2025)')
 
-    pdf.pub_entry('[6]', 'P. Tarafdar, K. Nobleson, P. Rana, et al.',
+    pdf.pub_entry('[7]', 'P. Tarafdar, K. Nobleson, P. Rana, et al.',
         'The Indian Pulsar Timing Array: First data release',
         'PASA 39, e053 (2022)')
 
-    pdf.pub_entry('[7]', 'A.K. Paladi, C. Dwivedi, P. Rana, K. Nobleson, et al.',
+    pdf.pub_entry('[8]', 'A.K. Paladi, C. Dwivedi, P. Rana, K. Nobleson, et al.',
         'Multiband extension of the wideband timing technique',
         'MNRAS 527(1), 213-231 (2023)')
 
@@ -226,27 +230,27 @@ def build_cv():
     pdf.cell(0, 5, 'Selected Co-Author Papers', new_x='LMARGIN', new_y='NEXT')
     pdf.ln(2)
 
-    pdf.pub_entry('[8]', 'J. Antoniadis, et al. (EPTA & InPTA)',
+    pdf.pub_entry('[9]', 'J. Antoniadis, et al. (EPTA & InPTA)',
         'The second data release from the European Pulsar Timing Array: III. Search for gravitational wave signals',
         'A&A 678, A50 (2023)')
 
-    pdf.pub_entry('[9]', 'J. Antoniadis, et al. (EPTA & InPTA)',
+    pdf.pub_entry('[10]', 'J. Antoniadis, et al. (EPTA & InPTA)',
         'The second data release from the European Pulsar Timing Array: IV. Implications for massive black holes, dark matter, and the early Universe',
         'A&A 685, A94 (2024)')
 
-    pdf.pub_entry('[10]', 'G. Agazie, et al. (IPTA)',
+    pdf.pub_entry('[11]', 'G. Agazie, et al. (IPTA)',
         'Comparing Recent Pulsar Timing Array Results on the Nanohertz Stochastic Gravitational-wave Background',
         'ApJ 966(1), 105 (2024)')
 
-    pdf.pub_entry('[11]', 'A. Srivastava, et al.',
+    pdf.pub_entry('[12]', 'A. Srivastava, et al.',
         'Noise analysis of the Indian Pulsar Timing Array data release I',
         'Phys. Rev. D 108, 023008 (2023)')
 
-    pdf.pub_entry('[12]', 'F. Iraci, et al. (EPTA & InPTA)',
+    pdf.pub_entry('[13]', 'F. Iraci, et al. (EPTA & InPTA)',
         'Combining the second data release of the European Pulsar Timing Array with low-frequency pulsar data',
         'A&A 704, A109 (2025)')
 
-    pdf.pub_entry('[13]', 'A. Susobhanan, et al.',
+    pdf.pub_entry('[14]', 'A. Susobhanan, et al.',
         'pinta: The uGMRT data processing pipeline for the Indian Pulsar Timing Array',
         'PASA 38, e017 (2021)')
 
@@ -254,25 +258,25 @@ def build_cv():
     pdf.section_heading('Talks & Presentations')
 
     pdf.subsection('International Pulsar Timing Array (IPTA) 2025')
-    pdf.bullet('K. Nobleson, et al., "The Indian Pulsar Timing Array Data Release 2: II. Noise Analysis" (Presenter)')
+    pdf.bullet('"The Indian Pulsar Timing Array Data Release 2: II. Noise Analysis" (Presenter)')
 
     pdf.subsection('32nd Meeting of IAGRG, 2022')
-    pdf.bullet('Nobleson K., Malik T., Banik S., "Tidal Deformability of Neutron Stars in R-Squared Gravity" (Presenter)')
+    pdf.bullet('"Tidal Deformability of Neutron Stars in R-Squared Gravity" (Presenter)')
 
     pdf.subsection('IPTA Catchup Meeting, 2022')
-    pdf.bullet('Tarafdar P., et al., "The Indian Pulsar Timing Array: First data release" (Presenter)')
+    pdf.bullet('"The Indian Pulsar Timing Array: First data release" (Presenter)')
 
     pdf.subsection('Research Facility Training Program, Osmania University, 2022')
     pdf.bullet('"Neutron stars as tools to study Advanced Astrophysics" (Invited Talk)')
 
     pdf.subsection('Science at Low Frequencies VIII, 2021')
-    pdf.bullet('Nobleson K., et al., "Low-frequency Wideband Timing on uGMRT Data" (Presenter)')
+    pdf.bullet('"Low-frequency Wideband Timing on uGMRT Data" (Presenter)')
 
     pdf.subsection('27th Intl. Conf. on Advances in Relativity and Cosmology, 2021')
-    pdf.bullet('Nobleson K., Malik T., Banik S., "Tidal deformability of NS in R-squared gravity" (Presenter)')
+    pdf.bullet('"Tidal deformability of NS in R-squared gravity" (Presenter)')
 
     pdf.subsection('Astronomical Society of India, 2020')
-    pdf.bullet('Nobleson K., Ali A., Banik S., "Neutron Stars with realistic EoS in f(R) theories of gravity" (Presenter)')
+    pdf.bullet('"Neutron Stars with realistic EoS in f(R) theories of gravity" (Presenter)')
 
     pdf.subsection('Compact Stars in QCD Phase Diagram VIII, ICTS Bangalore, 2020')
     pdf.bullet('Attendee')
