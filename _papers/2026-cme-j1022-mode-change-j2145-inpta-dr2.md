@@ -2,6 +2,7 @@
 title: "Effects of Coronal Mass Ejection on PSR J1022+1001 and Possible Mode Change of PSR J2145-0750 in the InPTA DR2"
 type: journal
 year: 2026
+month: March
 authors:
   - "Chowdhury, Shaswata"
   - "Krishnakumar, M. A."
@@ -50,6 +51,7 @@ bibtex: |
     title = {Effects of Coronal Mass Ejection on PSR J1022+1001 and Possible Mode Change of PSR J2145-0750 in the InPTA DR2},
     pages = {100547},
     year = {2026},
+    month = {3},
     note = {arXiv:2510.26594}
   }
 status: accepted
