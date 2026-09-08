@@ -31,12 +31,11 @@ Keywords: Gravitational Waves, Pulsar Timing Arrays, Millisecond Pulsars, Superm
 
 - **May 2026**: Continuing as Postdoctoral Researcher at Kumamoto University, focusing on gravitational wave detection with pulsar timing arrays
 - **December 2025 -- April 2026**: Postdoctoral research on computational learner modeling for the miXai learn project at Kumamoto University
-- **2026**: Two new papers accepted:
+- **2026**: Three new papers accepted:
   - Susobhanan et al. (MNRAS): "Revisiting wideband pulsar timing measurements"
   - Chowdhury et al. (JHEAP): "Effects of Coronal Mass Ejection on PSR J1022+1001 and Possible Mode Change of PSR J2145-0750 in the InPTA DR2"
+  - Nobleson et al. (JHEAP): "The Indian Pulsar Timing Array Data Release 2: II. Customised Single-Pulsar Noise Analysis and Noise Budget"
 - **2026**: Two papers under review on gravitational wave detection and pulsar timing analysis
-- **June 2025**: Presented work at International Pulsar Timing Array
-- **March 2026**: Paper titled "The Indian Pulsar Timing Array Data Release 2: II. Customised Single-Pulsar Noise Analysis and Noise Budget" accepted at JHEAP
 
 ## Contact Information
 
