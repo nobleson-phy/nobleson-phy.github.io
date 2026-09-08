@@ -5,7 +5,7 @@ is_home: true
 hero_title: "Keeping calm and timing pulsars"
 hero_tagline: "Listening to gravitational waves through the universe's most precise clocks"
 hero_name: "Nobleson Kunjappy"
-hero_position: "Research Associate"
+hero_position: "Postdoctoral Researcher"
 hero_institution: "Kumamoto University"
 ---
 

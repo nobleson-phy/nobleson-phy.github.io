@@ -24,9 +24,10 @@ permalink: /cv/
 
 ## Research Positions
 
-### Research Associate
+### Postdoctoral Researcher
 **Kumamoto University**, Kumamoto, Japan (May 2026 -- present)
-- Research on data analysis in pulsar astrophysics
+- Research on gravitational wave detection with pulsar timing arrays
+- Single-pulsar noise modeling and Bayesian data analysis
 
 ### Postdoctoral Researcher
 **Kumamoto University**, Kumamoto, Japan (December 2025 -- April 2026)
