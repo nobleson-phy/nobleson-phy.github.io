@@ -29,7 +29,8 @@ Keywords: Gravitational Waves, Pulsar Timing Arrays, Millisecond Pulsars, Superm
 
 ## Recent News
 
-- **May 2026**: Promoted to Research Associate at Kumamoto University, focusing on computational learner modeling for the miXai learn project
+- **May 2026**: Continuing as Postdoctoral Researcher at Kumamoto University, focusing on gravitational wave detection with pulsar timing arrays
+- **December 2025 -- April 2026**: Postdoctoral research on computational learner modeling for the miXai learn project at Kumamoto University
 - **2026**: Two new papers accepted:
   - Susobhanan et al. (MNRAS): "Revisiting wideband pulsar timing measurements" (arXiv:2512.01288)
   - Chowdhury et al. (JHEAP): "Profile Reconstruction from Temporally Stable Emission Components for Timing PSR J1713+0747" (arXiv:2510.26594)
