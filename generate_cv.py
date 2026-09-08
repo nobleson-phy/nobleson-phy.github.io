@@ -308,7 +308,8 @@ def build_cv():
     pdf.bullet('International Pulsar Timing Array (IPTA), 2021 -- present')
 
     # Output
-    out_path = '/Users/kujovi/Desktop/KU/github_research_profile.profile/Research_CV.pdf'
+    import os
+    out_path = os.path.join(os.path.dirname(__file__), 'Research_CV.pdf')
     pdf.output(out_path)
     print(f'CV generated: {out_path}')
 

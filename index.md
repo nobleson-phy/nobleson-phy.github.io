@@ -5,7 +5,7 @@ is_home: true
 hero_title: "Keeping calm and timing pulsars"
 hero_tagline: "Listening to gravitational waves through the universe's most precise clocks"
 hero_name: "Nobleson Kunjappy"
-hero_position: "Postdoctoral Researcher"
+hero_position: "Research Associate"
 hero_institution: "Kumamoto University"
 ---
 
@@ -29,7 +29,12 @@ Keywords: Gravitational Waves, Pulsar Timing Arrays, Millisecond Pulsars, Superm
 
 ## Recent News
 
-- **June 2025**: Presented work at International Pulsar Array
+- **May 2026**: Promoted to Research Associate at Kumamoto University, focusing on computational learner modeling for the miXai learn project
+- **2026**: Two new papers accepted:
+  - Susobhanan et al. (MNRAS): "Revisiting wideband pulsar timing measurements" (arXiv:2512.01288)
+  - Chowdhury et al. (JHEAP): "Profile Reconstruction from Temporally Stable Emission Components for Timing PSR J1713+0747" (arXiv:2510.26594)
+- **2026**: Two papers under review on gravitational wave detection and pulsar timing analysis
+- **June 2025**: Presented work at International Pulsar Timing Array
 - **March 2026**: Paper titled "The Indian Pulsar Timing Array Data Release 2: II. Customised Single-Pulsar Noise Analysis and Noise Budget" accepted at JHEAP
 
 ## Contact Information

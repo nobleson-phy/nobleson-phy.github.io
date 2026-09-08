@@ -26,8 +26,7 @@ permalink: /cv/
 
 ### Research Associate
 **Kumamoto University**, Kumamoto, Japan (May 2026 -- present)
-- Computational learner modeling for the miXai learn project
-- Research on machine learning applications in astrophysics
+- Research on data analysis in pulsar astrophysics
 
 ### Postdoctoral Researcher
 **Kumamoto University**, Kumamoto, Japan (December 2025 -- April 2026)
