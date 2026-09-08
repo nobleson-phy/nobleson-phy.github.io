@@ -144,6 +144,14 @@ def build_cv():
     # ===== RESEARCH POSITIONS =====
     pdf.section_heading('Research Positions')
 
+    pdf.subsection('Research Associate', 'May 2026 -- present')
+    pdf.detail_italic('Kumamoto University, Kumamoto, Japan')
+    pdf.bullet('Computational learner modeling for the miXai learn project')
+
+    pdf.subsection('Postdoctoral Researcher', 'Dec 2025 -- Apr 2026')
+    pdf.detail_italic('Kumamoto University, Kumamoto, Japan')
+    pdf.bullet('Computational learner modeling for the miXai learn project')
+
     pdf.subsection('Postdoctoral Researcher', 'Nov 2023 -- Nov 2025')
     pdf.detail_italic('Kumamoto University, Kumamoto, Japan')
     pdf.bullet('InPTA Data Release 2: Dataset processing and timing analysis')
